@@ -38,6 +38,4 @@ def load_dataset(frac_ratio: float):
 
     raw_val_dataset = tf.data.Dataset.from_tensor_slices((x_val, y_val)).shuffle(10, reshuffle_each_iteration=False)
 
-
-
     return x_train, x_val, y_train, y_val
